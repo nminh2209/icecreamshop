@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Life</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- lightgallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body id="registration">
+
+    <section class="header">
+
+        <a href="index.html" class="logo"> <i class="fas fa-ice-cream"></i> Kitty Cat Ice Cream  </a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="order.html">Order</a>
+            <a href="registration.html">Registration</a>
+        </nav>
+    </section>
+<!-- header -->
+    <main>
+        <!--registration-->
+        <section class="order" id="order">
+            <h1 class="heading">Register Now</h1>
+        <form id="registrationForm" method="POST" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" onsubmit="return validateRegistrationForm()">
+            <div class="box-container">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Username" name="username" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Password" name="password" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email" name="email" required>
+                <br>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <br>
+                <label>Favourite Ice Cream:</label>
+                <label><input type="checkbox" name="iceCream" value="vanilla"> Vanilla</label>
+                <label><input type="checkbox" name="iceCream" value="chocolate"> Chocolate</label>
+                <label><input type="checkbox" name="iceCream" value="strawberry"> Strawberry</label>
+                <br>
+            </div>
+            <input type="submit" value="Submit" class="btn">
+        </form>
+        </section>
+    </main>
+    <section class="footer">
+
+        <div class="icons-container">
+
+            <div class="icons">
+                <i class="fas fa-map"></i>
+                <h3>Address</h3>
+                <p>80 Duy Tan </p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-phone"></i>
+                <h3>phone</h3>
+                <p>+125-847-578</p>
+                <p>+125-847-578</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-envelope"></i>
+                <h3>email</h3>
+                <a href="#" class="link">nminh22092209@gmail.com</a>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-clock"></i>
+                <h3>Opening hours</h3>
+                <p>Monday - Friday: 9:00 - 17:00 <br> Saturday: 10:00 - 19:00</p>
+            </div>
+
+        </div>
+
+        <div class="share">
+            <a href="facebook.com" class="fab fa-facebook-f">Fb</a>
+            <a href="twitter.com" class="fab fa-twitter">X</a>
+            <a href="instagram.com" class="fab fa-instagram">Ins</a>
+            <a href="linkedin.com" class="fab fa-linkedin">ed</a>
+        </div>
+
+        <div class="credit">created by <span>Minhh</span> | all right reserved!</div>
+
+    </section>
+<script src="script/script.js"></script>
+</body>
+</html>
